@@ -7,8 +7,10 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://docs.inertiaorg.net',
+    site: 'https://inertiaorg.github.io',
+    base: '/starlight-docs',
   integrations: [
+
       starlight({
           plugins: [
               starlightSidebarTopics([
