@@ -12,6 +12,7 @@ export default defineConfig({
   integrations: [
 
       starlight({
+          favicon: '/public/favicon.png',
           plugins: [
               starlightSidebarTopics([
                   {
@@ -45,7 +46,7 @@ export default defineConfig({
               './src/fonts/font-face.css',
           ],
           logo: {
-          src: './src/assets/houston.webp',
+          src: './src/assets/InertiaTransparent.webp',
           },
           social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/InertiaOrg/starlight-docs' }],
 
