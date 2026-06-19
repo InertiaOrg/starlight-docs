@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [
 
       starlight({
-          favicon: '/public/favicon.png',
+          favicon: '/public/favicon.svg',
           plugins: [
               starlightSidebarTopics([
                   {
