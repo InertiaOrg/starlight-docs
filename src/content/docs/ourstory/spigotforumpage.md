@@ -1,6 +1,6 @@
 ---
-title: Installing ChamoItemSkins
-description: How to install ChamoItemSkins
+title: A Spigot forum page
+description: How is a Spigot forum relevant?
 ---
 
 ### Why Spigot forums?

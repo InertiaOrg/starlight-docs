@@ -1,4 +1,4 @@
-# SQD Studios Documentation
+# Inertia Documentation
 ## Contributing
 We take contributions from whoever wants, but if you don't know Starlight/Astro you may have a hard time
 If you just edit a file you're fine but if you create/delete files, there's the problem. When you finish writing your
@@ -8,12 +8,12 @@ To create a category do what the code says. (Take // as commends)
 ```javascript
 starlightSidebarTopics([     
     { // Category 1
-        label: 'ChamoItemSKins', // Name of the category
-        link: '/chamoitemskins/administration/introduction', // Landing page of the category
+        label: 'Inertia', // Name of the category
+        link: '/inertia/development/introduction', // Landing page of the category
         icon: 'open-book', // The icon it has
-        items: ['/chamoitemskins/administration/introduction'], // The file directories
+        items: ['inertia/development/introduction'], // The file directories
     },
-    // More categories
+    // More categoried
 ])
 ```
 But how to test it? Then we have the table below:

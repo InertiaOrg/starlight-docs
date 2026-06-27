@@ -7,76 +7,37 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://sqdstudios.github.io',
-    base: '/docs',
+    site: 'https://inertiaorg.github.io',
+    base: '/starlight-docs',
   integrations: [
 
       starlight({
-          favicon: 'favicon.ico',
+          favicon: '/public/favicon.svg',
           plugins: [
               starlightSidebarTopics([
                   {
-                      label: 'ABX Velocity',
-                      link: 'abxvelocity/administration/introduction/installing',
+                      label: 'Inertia',
+                      link: '/inertia/development/introduction',
                       icon: 'open-book',
-                      items: [
-                          {
-                              label: "Administration",
-                              items: [
-                                  {
-                                      label: "Introduction",
-                                      items: ['abxvelocity/administration/introduction/installing'],
-                                  },
-
-                              ]
-                          },
-                      ],
+                      items: ['inertia/development/introduction'],
                   },
                   {
-                      label: 'ChamoParty',
-                      link: 'chamoparty/administration/introduction/installing',
+                      label: 'Our Story',
+                      link: '/ourstory/spigotforumpage',
                       icon: 'information',
-                      items: [
-                          {
-                              label: "Administration",
-                              items: [
-                                  {
-                                      label: "Introduction",
-                                      items: ['chamoparty/administration/introduction/installing'],
-                                  },
-
-                              ]
-                          },
-                      ],
-                  },
-                  {
-                      label: 'ChamoItemSkins',
-                      link: 'chamoitemskins/administration/introduction/installing',
-                      icon: 'inventory',
-                      items: [
-                          {
-                              label: "Administration",
-                              items: [
-                                  {
-                                      label: "Introduction",
-                                      items: ['chamoitemskins/administration/introduction/installing'],
-                                  },
-
-                              ]
-                          },
-                      ],
+                      items: ['ourstory/spigotforumpage'],
                   },
               ]),
 
           ],
-          title: 'SQD Studios Documentation',
+          title: 'Inertia Documentation',
           components: {
               Footer: './src/components/overrides/Footer.astro',
               Banner: './src/components/overrides/Banner.astro',
               Sidebar: './src/components/Sidebar.astro',
           },
           editLink: {
-              baseUrl: 'https://github.com/SQD-Studios/docs/tree/master/',
+              baseUrl: 'https://github.com/InertiaOrg/starlight-docs/tree/master/',
           },
           tableOfContents: { minHeadingLevel: 1, maxHeadingLevel: 3 },
           customCss: [
@@ -85,9 +46,9 @@ export default defineConfig({
               './src/fonts/font-face.css',
           ],
           logo: {
-          src: './src/assets/SQDStudios.webp',
+          src: './src/assets/InertiaTransparent.webp',
           },
-          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/SQD-Studios/' }],
+          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/InertiaOrg/starlight-docs' }],
 
       }),
 	],
