@@ -5,38 +5,36 @@ template: splash # Remove or comment out this line to display the site sidebar o
 hero:
   tagline: This is the documentation under the Inertia Umbrella
   image:
-    file: ../../assets/InertiaTransparent.png
+    file: ../../assets/SQDStudios.webp
 
 ---
 import {Card, CardGrid} from '@astrojs/starlight/components';
+import { ContributorList } from "astro-contributors";
 import LinkCard from "/src/components/LinkCard.astro";
 
 <CardGrid>
-    <LinkCard title="Start Building" icon="pencil" href = "inertia/development/introduction">
-        Start building an Anti Cheat with Inertia as a base
-    </LinkCard>
-    <LinkCard title="Our GitHub" icon="github" href="https://github.com/InertiaOrg">
-        See our progress!
-    </LinkCard>
-</CardGrid>
-
-## Our goals
-
-<CardGrid>
-	<Card title="Unite AntiCheat Developers" icon="pencil">
-        Instead of everyone writing the same basic things, times and times, unfinished to use us.
-	</Card>
-	<Card title="Why?" icon="document">
-        Because it's a waste of time. We want to fix that
-	</Card>
-	<Card title="Shouldn't open source allow exploiters to bypass us?" icon="add-document">
+	<LinkCard title="ChamoItemSkins" icon="pencil" href="chamoitemskins/administration/introduction/installing">
+        for your server to be remembered. A skin plugin, mainly for model support
+	</LinkCard>
+	<LinkCard title="ChamoParty" icon="document" href="chamoparty/administration/introduction/installing">
+        A modern VoteParty plugin with nuVotifier and MiniMessage support and a good API*. Fork of zVoteParty
+	</LinkCard>
+	<LinkCard title="ABX-Velocity" destructive icon="add-document" href="abxvelocity/administration/introduction/installing/">
         If a check dies the second someone reads it, it was weak anyway.
-        The answer is not “hide everything”, it is “make the design strong, tested, and reviewed that reading it is not can't to kill it.”
-	</Card>
-    <Card title="What do we do" icon="bars">
-        We make, a basic engine and perfect it.
-        We don't want plugins that rush it.
-        So we made this project to act as a base for every next and current generation developer
-        of minecraft anticheats
-    </Card>
+        Adds Velocity Support for the popular plugin AdvancedBanX.
+	</LinkCard>
+    <LinkCard title="Misc" icon="">
+        Miscellaneous stuff
+    </LinkCard>
 </CardGrid>
+
+
+# Our Contributors
+### Documentation
+<ContributorList githubRepo="SQD-Studios/docs" />
+### ChamoParty
+<ContributorList githubRepo="SQD-Studios/ChamoParty" />
+### ABX-Velocity
+<ContributorList githubRepo="SQD-Studios/ABX-Velocity" />
+### ChamoItemSkins
+<ContributorList githubRepo="SQD-Studios/ChamoItemSkins" />
